@@ -32,7 +32,34 @@
 		D4CBEE391A196DB400BBF43E /* YTPVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CBEE381A196DB400BBF43E /* YTPVideo.m */; };
 		D4CBEE3C1A197D9500BBF43E /* YTP-DB.sql in Resources */ = {isa = PBXBuildFile; fileRef = D4CBEE3B1A197D9500BBF43E /* YTP-DB.sql */; };
 		D4CBEE3E1A19906900BBF43E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CBEE3D1A19906900BBF43E /* MediaPlayer.framework */; };
+		D4FAC1EB1A1ADE1E00208FE5 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FAC1EA1A1ADE1E00208FE5 /* ActionViewController.m */; };
+		D4FAC1ED1A1ADE1E00208FE5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FAC1EC1A1ADE1E00208FE5 /* MainInterface.storyboard */; };
+		D4FAC1F01A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4FAC1E51A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4FAC1EE1A1ADE1E00208FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C009F95018E2065E00EDB1AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4FAC1E41A1ADE1E00208FE5;
+			remoteInfo = "YouTube-Plus-Ext";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4FAC1F41A1ADE1E00208FE5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4FAC1F01A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C009F95818E2065E00EDB1AF /* YouTube-Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube-Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +105,11 @@
 		D4CBEE381A196DB400BBF43E /* YTPVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPVideo.m; sourceTree = "<group>"; };
 		D4CBEE3B1A197D9500BBF43E /* YTP-DB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YTP-DB.sql"; sourceTree = "<group>"; };
 		D4CBEE3D1A19906900BBF43E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D4FAC1E51A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YouTube-Plus-Ext.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4FAC1E81A1ADE1E00208FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4FAC1E91A1ADE1E00208FE5 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		D4FAC1EA1A1ADE1E00208FE5 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		D4FAC1EC1A1ADE1E00208FE5 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +125,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4FAC1E21A1ADE1E00208FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C009F96118E2065E00EDB1AF /* YouTube-Plus */,
+				D4FAC1E61A1ADE1E00208FE5 /* YouTube-Plus-Ext */,
 				C009F95A18E2065E00EDB1AF /* Frameworks */,
 				C009F95918E2065E00EDB1AF /* Products */,
 			);
@@ -109,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				C009F95818E2065E00EDB1AF /* YouTube-Plus.app */,
+				D4FAC1E51A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +274,25 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		D4FAC1E61A1ADE1E00208FE5 /* YouTube-Plus-Ext */ = {
+			isa = PBXGroup;
+			children = (
+				D4FAC1E91A1ADE1E00208FE5 /* ActionViewController.h */,
+				D4FAC1EA1A1ADE1E00208FE5 /* ActionViewController.m */,
+				D4FAC1EC1A1ADE1E00208FE5 /* MainInterface.storyboard */,
+				D4FAC1E71A1ADE1E00208FE5 /* Supporting Files */,
+			);
+			path = "YouTube-Plus-Ext";
+			sourceTree = "<group>";
+		};
+		D4FAC1E71A1ADE1E00208FE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4FAC1E81A1ADE1E00208FE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,15 +303,34 @@
 				C009F95418E2065E00EDB1AF /* Sources */,
 				C009F95518E2065E00EDB1AF /* Frameworks */,
 				C009F95618E2065E00EDB1AF /* Resources */,
+				D4FAC1F41A1ADE1E00208FE5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4FAC1EF1A1ADE1E00208FE5 /* PBXTargetDependency */,
 			);
 			name = "YouTube-Plus";
 			productName = "YouTube-Plus";
 			productReference = C009F95818E2065E00EDB1AF /* YouTube-Plus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D4FAC1E41A1ADE1E00208FE5 /* YouTube-Plus-Ext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4FAC1F31A1ADE1E00208FE5 /* Build configuration list for PBXNativeTarget "YouTube-Plus-Ext" */;
+			buildPhases = (
+				D4FAC1E11A1ADE1E00208FE5 /* Sources */,
+				D4FAC1E21A1ADE1E00208FE5 /* Frameworks */,
+				D4FAC1E31A1ADE1E00208FE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YouTube-Plus-Ext";
+			productName = "YouTube-Plus-Ext";
+			productReference = D4FAC1E51A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -270,6 +349,10 @@
 							};
 						};
 					};
+					D4FAC1E41A1ADE1E00208FE5 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = L66UR6Q58T;
+					};
 				};
 			};
 			buildConfigurationList = C009F95318E2065E00EDB1AF /* Build configuration list for PBXProject "YouTube-Plus" */;
@@ -286,6 +369,7 @@
 			projectRoot = "";
 			targets = (
 				C009F95718E2065E00EDB1AF /* YouTube-Plus */,
+				D4FAC1E41A1ADE1E00208FE5 /* YouTube-Plus-Ext */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +384,14 @@
 				C009F97418E2065E00EDB1AF /* Images.xcassets in Resources */,
 				C009F96618E2065E00EDB1AF /* InfoPlist.strings in Resources */,
 				C009F96F18E2065E00EDB1AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4FAC1E31A1ADE1E00208FE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FAC1ED1A1ADE1E00208FE5 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +420,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4FAC1E11A1ADE1E00208FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FAC1EB1A1ADE1E00208FE5 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4FAC1EF1A1ADE1E00208FE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4FAC1E41A1ADE1E00208FE5 /* YouTube-Plus-Ext */;
+			targetProxy = D4FAC1EE1A1ADE1E00208FE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C009F96418E2065E00EDB1AF /* InfoPlist.strings */ = {
@@ -452,6 +560,48 @@
 			};
 			name = Release;
 		};
+		D4FAC1F11A1ADE1E00208FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "YouTube-Plus-Ext/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4FAC1F21A1ADE1E00208FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "YouTube-Plus-Ext/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,6 +622,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D4FAC1F31A1ADE1E00208FE5 /* Build configuration list for PBXNativeTarget "YouTube-Plus-Ext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4FAC1F11A1ADE1E00208FE5 /* Debug */,
+				D4FAC1F21A1ADE1E00208FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
